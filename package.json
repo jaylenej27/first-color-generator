@@ -4,5 +4,10 @@
   "main": "index.js",
   "repository": "https://github.com/jaylenej27/node-random-color-generator.git",
   "author": "Jennifer Koelbl <jaylenej27@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "my-colors": "^1.0.0",
+    "random-hex": "^1.0.2",
+    "randomcolor": "^0.6.2"
+  }
 }
