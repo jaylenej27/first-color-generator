@@ -1,6 +1,7 @@
 const randomColor = require('randomcolor');
 //const randomHex = require('random-hex');
 const createColor = require('my-colors');
+//const readline = require('readline');
 
 //get additional color parameters from user
 const hueInput = process.argv[2];
@@ -30,20 +31,47 @@ const display = displayColor(`##############################
 
 console.log(display);
 
-/*
-if(process.argv[2] === 'ask') {
-
-}
-const newdisplay = showcolor(`##############################
+/*stretch goals in progress
+if (process.argv[2] === 'ask') {
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+  userInput = rl.question('What hue and luminosity?', (colorhue, colorlum) => {
+    const hue = colorhue;
+    const lum = colorlum;
+    const newColor = randomColor({
+      luminosity: lum,
+      hue: hue,
+    });
+    const newdisplayColor = createColor(newColor);
+    const newdisplay = newdisplayColor(`##############################
 ##############################
 ##############################
 #####                    #####
 #####                    #####
-#####      ${color}       #####
+#####      ${newColor}       #####
 #####                    #####
 #####                    #####
 ##############################
 ##############################
 ##############################`);
-//console.log(newdisplay);
+    console.log(newdisplay);
+    rl.close();
+  });
+} else {
+  const display = displayColor(`##############################
+##############################
+##############################
+#####                    #####
+#####                    #####
+#####      ${inputColor}       #####
+#####                    #####
+#####                    #####
+##############################
+##############################
+##############################`);
+
+  console.log(display);
+}
 */
