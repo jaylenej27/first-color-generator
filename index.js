@@ -1,7 +1,5 @@
 const randomColor = require('randomcolor');
-//const randomHex = require('random-hex');
 const createColor = require('my-colors');
-//const readline = require('readline');
 
 //get additional color parameters from user
 const hueInput = process.argv[2];
@@ -32,6 +30,9 @@ const display = displayColor(`##############################
 console.log(display);
 
 /*stretch goals in progress
+const randomHex = require('random-hex');
+const readline = require('readline');
+
 if (process.argv[2] === 'ask') {
   const rl = readline.createInterface({
     input: process.stdin,
