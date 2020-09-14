@@ -1,4 +1,4 @@
-# Node random colore generator
+# Node random color generator
 
 _**Generates random hex color and displays in that color**_
 
